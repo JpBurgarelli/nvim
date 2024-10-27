@@ -9,7 +9,7 @@ return {
 				"luacheck",
 				"shellcheck",
 				"shfmt",
-				"tailwindcss-language-server",
+				-- "tailwindcss-language-server",
 				"typescript-language-server",
 				"css-lsp",
 			})
@@ -24,11 +24,11 @@ return {
 			---@type lspconfig.options
 			servers = {
 				cssls = {},
-				tailwindcss = {
-					root_dir = function(...)
-						return require("lspconfig.util").root_pattern(".git")(...)
-					end,
-				},
+				-- tailwindcss = {
+				-- 	root_dir = function(...)
+				-- 		return require("lspconfig.util").root_pattern(".git")(...)
+				-- 	end,
+				-- },
 				tsserver = {
 					root_dir = function(...)
 						return require("lspconfig.util").root_pattern(".git")(...)
