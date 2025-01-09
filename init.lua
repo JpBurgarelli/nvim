@@ -8,3 +8,10 @@ end
 vim.print = _G.dd
 
 require("config.lazy")
+vim.filetype.add({
+	pattern = {
+		[".*%.vm%.original"] = "velocity",
+		[".*%.vm%.bak"] = "velocity",
+		[".*%.vm%..*"] = "velocity",
+	},
+})
